@@ -1,4 +1,4 @@
-package com.bridgelabz.bst.hash_table_uc2;
+package com.bridgelabz.bst.hash_table_uc3;
 
 import java.util.ArrayList;
 
@@ -43,6 +43,32 @@ public class LinkedHashMap<K, V> {
 		} else {
 			mapNode.setValue(value);
 		}
+	}
+
+	public V remove(K key) {
+		int index = this.getBucketIndex(key);
+		LinkedList<K> newLinkedList = this.bucketArray.get(index);
+
+		MapNode<K, V> headNode = (MapNode<K, V>) newLinkedList.search(key);
+
+		MapNode<K, V> prev = null;
+		while (headNode != null) {
+			if (headNode.key.equals(key))
+				break;
+
+			prev = headNode;
+			headNode = headNode.next;
+		}
+
+		if (headNode == null)
+			return null;
+
+		if (prev != null)
+			prev.next = headNode.next;
+		else
+			bucketArray.set(index, headNode.next);
+
+		return headNode.value;
 	}
 
 	@Override

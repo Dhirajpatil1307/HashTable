@@ -1,4 +1,4 @@
-package com.bridgelabz.bst.hash_table_uc2;
+package com.bridgelabz.bst.hash_table_uc3;
 
 public class LinkedList<K> {
 	public INode<K> tail;
