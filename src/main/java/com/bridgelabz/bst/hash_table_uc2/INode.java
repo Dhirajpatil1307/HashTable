@@ -1,4 +1,4 @@
-package com.bridgelabz.bst.hash_table_uc1;
+package com.bridgelabz.bst.hash_table_uc2;
 
 public interface INode<K> {
 	K getKey();
