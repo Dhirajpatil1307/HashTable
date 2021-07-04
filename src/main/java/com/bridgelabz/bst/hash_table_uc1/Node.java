@@ -1,4 +1,4 @@
-package com.bridgelabz.bst.hash_table_main;
+package com.bridgelabz.bst.hash_table_uc1;
 
 public class Node<K> implements INode<K> {
 

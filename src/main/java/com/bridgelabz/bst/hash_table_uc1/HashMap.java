@@ -1,4 +1,4 @@
-package com.bridgelabz.bst.hash_table_main;
+package com.bridgelabz.bst.hash_table_uc1;
 
 public class HashMap<K, V> {
 	public LinkedList<K> linkedList;

@@ -1,6 +1,6 @@
-package com.bridgelabz.bst.hash_table_main;
+package com.bridgelabz.bst.hash_table_uc1;
 
-public class MapNode<K, V> extends LinkedList<K> implements INode<K> {
+public class MapNode<K, V> implements INode<K> {
 	K key;
 	V value;
 	MapNode<K, V> next;
